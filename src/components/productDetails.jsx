@@ -2,7 +2,10 @@ import React, { Component } from "react";
 
 class ProductDetails extends Component {
   handleSave = () => {
-    // Navigate to /products
+    // Navigate to /products (programmatic navigation inside history-object.push/replace)
+    // push : you can go back by clicking browser button.
+    // replace : no go back ( login )
+    this.props.history.push("/products");
   };
 
   render() {
